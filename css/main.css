@@ -1,4 +1,7 @@
-:root{}
+:root{
+    --font-family:'Poppins', sans-serif;
+    --background-color:#FFFFFF;
+}
 
 h1,
 h2,
@@ -17,16 +20,12 @@ padding-left: 0;
 .link{text-decoration: none;}
 .list{list-style: none;}
 .container{
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 1380px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
 }
-.section{
-    padding: 94px 0;
-}
-
 
 
 img{display: block;}
@@ -34,10 +33,200 @@ button {  cursor: pointer;
     font-family:inherit;}
 
 body{
-    font-family:;
+    font-family:var(--font-family);
     color:;
     font-size: ;
     letter-spacing:;
-    background-color:;
+    background-color:var(--background-color);
 
 }
+.header{}
+.nav{}
+.logo{}
+.logo-lex{}
+.menu{}
+.menu-item{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #263238;}
+.header-btn{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #000000;
+    }
+.home{}
+.home-title{
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 80px;
+    color: #000000;
+    }
+.home-secondary-img{}
+.home-text{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    
+    color: #8F95A5;}
+.home-btn{font-weight: 400;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+background-color: #263238;}
+.home-primary-img
+.skill{}
+.skill-title{font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+    }
+.skill-card-img{}
+.skill-card-title{font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    /* identical to box height */
+    
+    
+    color: #263238;}
+.skill-card-text{font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    
+    color: #8F95A5;
+    }
+.skill-card-btn{font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+background-color: #263238;}
+.about{}
+.about-title{font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+    }
+.about-text{font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    /* or 180% */
+    
+    
+    color: #8F95A5;}
+.about-subtitle{font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    /* identical to box height */
+    
+    
+    color: #2A3246;}
+.about-subtext{font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    
+    color: #8F95A5;
+    }
+.about-img{}
+.pricing{}
+.pricing-title{font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    /* identical to box height */
+    
+    
+    color: #000000;}
+.pricing-card-img{}
+.pricing-card-title{font-weight: 600;
+    font-size: 30px;
+    line-height: 48px;
+    /* identical to box height, or 160% */
+    
+    text-transform: capitalize;
+    
+    color: #263238;}
+.pricing-card-text-primary{font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    
+    color: #8F95A5;
+    }
+.pricing-card-text-secondary{font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #546269;}
+.pricing-card-numb{
+    font-size: 24px;
+    line-height: 36px;
+
+    
+
+    
+    color: #263238;}
+.contact{}
+.contact-img{}
+.contact-title{font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    /* identical to box height */
+    
+    
+    color: #000000;}
+.contact-text{font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    
+    color: #8F95A5;
+    }
+.contact-change-btn-first{font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 188% */
+    
+    
+    color: #8F95A5;}
+.contact-change-btn-second{font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+    
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: #FFFFFF;
+background-color: #263238;}
+.footer{}
+.footer-text{font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    
+    color: #8F95A5;
+    }
+
+
+
+
+
+
+

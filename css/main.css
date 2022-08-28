@@ -1,6 +1,17 @@
 :root{
     --font-family:'Poppins', sans-serif;
     --background-color:#FFFFFF;
+    --primary-logo-color:#000000;
+    --secondary-logo-color:#939393;
+    --header-btn-text-color:#000000;
+    --header-btn-background-color:#FFFFFF;
+    --header-btn-border-color:#263238;
+    --menu-text-color:#263238;
+    --main-title-color:#000000;
+    --secondary-title-color:#263238;
+    --about-subtitle-color:#2A3246;
+    --text-color:#8F95A5;
+
 }
 
 h1,
@@ -35,7 +46,7 @@ button {  cursor: pointer;
 
 body{
     font-family:var(--font-family);
-    color:;
+    color:var(--text-color);
     font-size:20px ;
     line-height:1.5 ;
     background-color:var(--background-color);
@@ -52,36 +63,33 @@ body{
 .logo{ 
     font-weight: 400;
     font-size: 36px;
-    line-height: 54px;
     display: flex;
     align-items: center;
-    color: #000000;
+    color: var(--primary-logo-color);
     margin-right: 236px;
 }
-.logo-lex{color: #939393;}
+.logo-lex{color: var(--secondary-logo-color);}
 .menu{
      display: flex;
     column-gap:50px ;}
  
 .menu-item{
     font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
-    color: #263238;}
+    color: var(--menu-text-color);}
 .header-btn{
  
     align-items: center;
     margin-left: 121px;
     font-weight: 400;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #000000;
+    color: var(--header-btn-text-color);
     padding: 20px 106px;
-    border: solid 2px #263238;
+    border: solid 2px var(--header-btn-border-color);
     border-radius: 10px;
-    background-color: #FFFFFF;
+    background-color: var(--header-btn-background-color);
     }
 .home{
     padding-bottom: 182px;
@@ -95,8 +103,8 @@ body{
 .home-title{
     font-weight: 600;
     font-size: 64px;
-    line-height: 80px;
-    color: #000000;
+    line-height: 1.25;
+    color: var(--main-title-color);
     margin-bottom: 40px;
     width: 386px;
     }
@@ -104,18 +112,15 @@ body{
 .home-text{
     font-weight: 400;
     font-size: 24px;
-    line-height: 36px;
-width: 540px;
-    
-    color: #8F95A5;
-margin-bottom: 60px;}
+    width: 540px;
+    margin-bottom: 60px;}
 .home-btn{
     border: solid 1px #263238;
     border-radius: 10px;
     padding: 23px 64px;
     font-weight: 400;
     font-size: 36px;
-    line-height: 54px;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     color: #FFFFFF;
@@ -132,10 +137,11 @@ background-color: #263238;}
     padding-bottom: 180px;
 }
 .skill-title{
+    text-align: center;
+margin-bottom: 60px;
     font-weight: 600;
     font-size: 48px;
-    line-height: 72px;
-    color: #000000;
+    color: var(--main-title-color);
     }
     .skill-list-flex{
     display: grid;
@@ -147,28 +153,32 @@ background-color: #263238;}
     .skill-card{
         radius:10px;
         background-color: #F5F5F5;
+        }
+    .skill-card-down{
+        padding-top:24px ;
+    }
+    .skill-card-down-listening{
         
     }
     .card-one{grid-area: 1 / 1 / 3 / 2; }
     .card-two{grid-area: 1 / 2 / 2 / 3; }
     .card-three{grid-area: 1 / 3 / 2 / 4;}
     .card-four{grid-area: 2 / 2 / 3 / 4;
+        display: flex;
+        flex-direction: row-reverse;
      
     }
 
 .skill-card-img{}
 .skill-card-title{font-weight: 600;
     font-size: 30px;
-    line-height: 45px;
-    color: #263238;}
+    color: var(--secondary-title-color);}
 .skill-card-text{font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
-    color: #8F95A5;
     }
 .skill-card-btn{font-weight: 500;
     font-size: 18px;
-    line-height: 27px;
+    line-height: 1.5;
 
     color: #FFFFFF;
 background-color: #263238;}
@@ -182,69 +192,53 @@ background-color: #263238;}
 .about-title{
     font-weight: 600;
     font-size: 48px;
-    line-height: 72px;
     margin-bottom: 60px;
-    color: #000000;
+    color: var(--main-title-color);
     }
 .about-text{font-weight: 400;
-    font-size: 20px;
-    line-height: 36px;
-
-    color: #8F95A5;}
+    line-height: 1.8;
+}
     .about-list-flex{
         display: flex;
         column-gap: 131px;
     }
 .about-subtitle{font-weight: 600;
     font-size: 48px;
-    line-height: 72px;
     text-align: center;
 
-    color: #2A3246;}
+    color: var(--about-subtitle-color);}
 .about-subtext{font-weight: 400;
     font-size: 20px;
-    line-height: 30px;
     text-align: center;
-    
-    color: #8F95A5;
     }
 .about-img{}
 .pricing{}
 .pricing-title{font-weight: 600;
     font-size: 48px;
-    line-height: 72px;
 
-    color: #000000;}
+    color: var(--main-title-color);}
 .pricing-card-img{}
 .pricing-card-title{font-weight: 600;
     font-size: 30px;
-    line-height: 48px;
+    line-height: 1.6;
     text-transform: capitalize;
-    color: #263238;}
+    color: var(--secondary-title-color);}
 .pricing-card-text-primary{font-weight: 400;
-    font-size: 20px;
-    line-height: 30px; 
-    color: #8F95A5;
     }
 .pricing-card-text-secondary{font-weight: 400;
     font-size: 18px;
-    line-height: 27px;
     text-align: center;
     color: #546269;}
 .pricing-card-numb{
     font-size: 24px;
-    line-height: 36px;
     color: #263238;}
 .contact{}
 .contact-img{}
 .contact-title{font-weight: 600;
     font-size: 48px;
-    line-height: 72px;
-    color: #000000;}
+    color: var(--main-title-color);}
 .contact-text{font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    color: #8F95A5;
+
     }
 .contact-change-btn-first{font-weight: 400;
     font-size: 16px;
@@ -252,7 +246,7 @@ background-color: #263238;}
     color: #8F95A5;}
 .contact-change-btn-second{font-weight: 500;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 1.88;
     text-align: center;
     letter-spacing: 0.03em;
     
@@ -261,11 +255,9 @@ background-color: #263238;}
 .footer{}
 .footer-text{font-weight: 400;
     font-size: 24px;
-    line-height: 36px;
     display: flex;
     align-items: center;
     letter-spacing: 0.02em;
-    color: #8F95A5;
     }
 
 

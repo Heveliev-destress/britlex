@@ -3,14 +3,19 @@
     --background-color:#FFFFFF;
     --primary-logo-color:#000000;
     --secondary-logo-color:#939393;
-    --header-btn-text-color:#000000;
-    --header-btn-background-color:#FFFFFF;
-    --header-btn-border-color:#263238;
+    --secondary-btn-text-color:#000000;
+    --secondary-btn-background-color:#FFFFFF;
+    --btn-border-color:#263238;
     --menu-text-color:#263238;
     --main-title-color:#000000;
     --secondary-title-color:#263238;
     --about-subtitle-color:#2A3246;
     --text-color:#8F95A5;
+    --primary-btn-background-color:#263238;
+    --primary-btn-text-color:#FFFFFF;
+    --skill-card-background-color:#F5F5F5;
+    --price-text-color:#546269;
+    --price-numb-color:#263238;
 
 }
 
@@ -85,11 +90,11 @@ body{
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--header-btn-text-color);
+    color: var(--secondary-btn-text-color);
     padding: 20px 106px;
-    border: solid 2px var(--header-btn-border-color);
+    border: solid 2px var(--btn-border-color);
     border-radius: 10px;
-    background-color: var(--header-btn-background-color);
+    background-color: var(--secondary-btn-background-color);
     }
 .home{
     padding-bottom: 182px;
@@ -115,7 +120,7 @@ body{
     width: 540px;
     margin-bottom: 60px;}
 .home-btn{
-    border: solid 1px #263238;
+    border: solid 1px var(--btn-border-color);
     border-radius: 10px;
     padding: 23px 64px;
     font-weight: 400;
@@ -123,8 +128,8 @@ body{
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
-background-color: #263238;}
+    color: var(--primary-btn-text-color);
+background-color: var(--primary-btn-background-color);}
 .icon{
 
     margin-top: 134px;
@@ -152,7 +157,8 @@ margin-bottom: 60px;
     }
     .skill-card{
         radius:10px;
-        background-color: #F5F5F5;
+        background-color: var(--skill-card-background-color);
+        padding: 32px 18px;
         }
     .skill-card-down{
         padding-top:24px ;
@@ -164,7 +170,7 @@ margin-bottom: 60px;
     .card-two{grid-area: 1 / 2 / 2 / 3; }
     .card-three{grid-area: 1 / 3 / 2 / 4;}
     .card-four{grid-area: 2 / 2 / 3 / 4;
-        display: flex;
+        /* display: flex; */
         flex-direction: row-reverse;
      
     }
@@ -179,9 +185,12 @@ margin-bottom: 60px;
 .skill-card-btn{font-weight: 500;
     font-size: 18px;
     line-height: 1.5;
+    border: solid 1px var(--btn-border-color);
+    border-radius: 10px;
+    padding: 15px 52px;
 
-    color: #FFFFFF;
-background-color: #263238;}
+    color: var(--primary-btn-text-color);
+    background-color: var(--primary-btn-background-color);}
 .about{
     padding-bottom: 180px;
 }
@@ -194,9 +203,11 @@ background-color: #263238;}
     font-size: 48px;
     margin-bottom: 60px;
     color: var(--main-title-color);
+    margin-bottom: 60px;
     }
 .about-text{font-weight: 400;
     line-height: 1.8;
+    margin-bottom: 30px;
 }
     .about-list-flex{
         display: flex;
@@ -205,6 +216,7 @@ background-color: #263238;}
 .about-subtitle{font-weight: 600;
     font-size: 48px;
     text-align: center;
+    margin-bottom: 6px;
 
     color: var(--about-subtitle-color);}
 .about-subtext{font-weight: 400;
@@ -212,26 +224,36 @@ background-color: #263238;}
     text-align: center;
     }
 .about-img{}
-.pricing{}
+.pricing{ padding-bottom: 180px;}
 .pricing-title{font-weight: 600;
     font-size: 48px;
-
+    text-align: center;
+margin-bottom: 60px;
     color: var(--main-title-color);}
+    .pricing-list-flex{
+        display: flex;
+        column-gap: 30px;
+    }
+    
 .pricing-card-img{}
+.pricing-card-down{
+    padding:31px 0 ;
+}
 .pricing-card-title{font-weight: 600;
     font-size: 30px;
     line-height: 1.6;
     text-transform: capitalize;
-    color: var(--secondary-title-color);}
+    color: var(--secondary-title-color);
+margin-bottom: 20px;}
 .pricing-card-text-primary{font-weight: 400;
     }
 .pricing-card-text-secondary{font-weight: 400;
     font-size: 18px;
     text-align: center;
-    color: #546269;}
+    color: var(--price-text-color);}
 .pricing-card-numb{
     font-size: 24px;
-    color: #263238;}
+    color: var(--price-numb-color);}
 .contact{}
 .contact-img{}
 .contact-title{font-weight: 600;
@@ -249,9 +271,12 @@ background-color: #263238;}
     line-height: 1.88;
     text-align: center;
     letter-spacing: 0.03em;
+    border: solid 1px var(--btn-border-color);
+    border-radius: 10px;
+    padding: 10px 56px ;
     
-    color: #FFFFFF;
-background-color: #263238;}
+    color: var(--primary-btn-text-color);
+    background-color: var(--primary-btn-background-color);}
 .footer{}
 .footer-text{font-weight: 400;
     font-size: 24px;
